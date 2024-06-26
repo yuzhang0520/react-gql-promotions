@@ -6,11 +6,10 @@ This project is the frontend application built using ReactJS, serving as the cli
 
 - [Project Overview](#project-overview)
 - [Installation](#installation)
-- [Running the Project](#running-the-project)
 - [Features](#features)
 - [Usage](#usage)
 - [Screenshots](#screenshots)
-- [Note](#note)
+- [Notes](#notes)
 
 ## Project Overview
 This ReactJS project acts as the frontend for a GraphQL API designed to manage promotions, products, and influencers. It provides a user-friendly interface to interact with and visualize data from the backend.
@@ -25,6 +24,12 @@ This ReactJS project acts as the frontend for a GraphQL API designed to manage p
    ```bash
    npm install
 
+3. Start the development server:
+   ```bash
+   npm start
+
+4. Open your browser and navigate to `http://localhost:3000/` to view the project.
+
 ## Features
 - **Header with Logo and Navigation**: Includes a header with a logo and a navigation bar with links to Home and Core Info Database.
 - **Navigation**: Core Info Database link shows dropdown options for Promotions, Products, and Influencers.
@@ -37,6 +42,8 @@ This ReactJS project acts as the frontend for a GraphQL API designed to manage p
 Ensure the GraphQL server (`graphql-promotions-influencers-api`) is running locally at `http://localhost:4000` for the frontend to interact with the backend data.
 
 ## Screenshots
+![react-gql-promotions-homepage](https://github.com/yuzhang0520/react-gql-promotions/assets/129474110/fe645a08-94ee-4d3f-ad57-cbd728c18b89)
+
 
 ## Notes
 This project is Yu's practice demo and is not fully completed. It serves as a demonstration of integrating ReactJS with GraphQL for managing promotions and influencers.   
