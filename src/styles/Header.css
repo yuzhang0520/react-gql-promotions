@@ -1,0 +1,76 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+nav ul li:hover {
+  font-weight: bold; /* Make font bold */
+}
+
+nav ul li a {
+  color: white; /* Set text color to white */
+  text-decoration: none; /* Remove underline */
+}
+
+nav ul li.active {
+  color: red;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  background-color: black;
+  border: 2px solid white;
+  border-radius: 5px;
+  height: 200px; /* Keep the height as 200px */
+  padding: 10px;
+  margin-top: 5px;
+  align-items: center; 
+}
+
+.dropdown.show {
+  display: block;
+}
+
+.dropdown ul {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Evenly space items vertically */
+}
+
+.dropdown li {
+  color: white;
+  font-weight: normal; 
+  text-align: left;
+  margin: 5px 25px 30px 0px;
+  padding: 5px 0; /* Add vertical padding to space items */
+}
+
+.dropdown li a {
+  color: white;
+  font-weight: normal; 
+  text-decoration: none;
+}
+
+.dropdown li:hover {
+  background-color: white;
+}
+
+.dropdown li:hover a {
+  color: black;
+}

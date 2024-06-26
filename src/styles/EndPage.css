@@ -1,0 +1,244 @@
+.main-container {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 70%;
+    border-radius: 20px;
+    align-items: center;
+    margin-top: 2%;
+    padding: 0;
+    padding-bottom: 2%;
+}
+
+.grid-header {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    padding-left: 5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-weight: bold;
+    font-size: larger;
+}
+
+.grid-details {
+    width: 80%;
+}
+
+.grid-details-header {
+    font-weight: bold;
+    width: 100%;
+    padding: 18px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.details-header-item {
+    flex: 1 1 20%;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.details-row {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.datails-data {
+    flex: 1 1 20%;
+    text-align: left;
+}
+
+.details-links {
+    display: flex;
+    align-items: flex-start;
+}
+
+.details-links ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.details-links li::before {
+    content: '•'; 
+    margin-right: 10px;
+}
+
+.sub-header-item {
+    flex: 1 1 20%;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.products-table {
+    width: 80%;
+}
+
+.products-table-header {
+    font-weight: bold;
+    width: 100%;
+    background-color: black;
+    padding: 18px 0;
+    color: white;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    display: grid;
+    grid-template-columns: 8% 8% 1fr 1fr 10%;
+}
+
+.products-row {
+    width: 100%;
+    padding: 18px 0;
+    display: grid;
+    grid-template-columns: 8% 8% 1fr 1fr 10%;
+    align-items: center;
+  
+    &:nth-of-type(odd) {
+      background: #EEEEEE;
+    }
+    &:nth-of-type(even) {
+      background: white;
+    }
+}
+
+.influencers-table {
+    width: 80%;
+}
+
+.influencers-table-header {
+    font-weight: bold;
+    width: 100%;
+    background-color: black;
+    padding: 18px 0;
+    color: white;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    display: grid;
+    grid-template-columns: 8% 8% 1fr 1fr 1fr;
+}
+
+.influencers-row {
+    width: 100%;
+    padding: 18px 0;
+    display: grid;
+    grid-template-columns: 8% 8% 1fr 1fr 1fr;
+    align-items: center;
+  
+    &:nth-of-type(odd) {
+      background: #EEEEEE;
+    }
+    &:nth-of-type(even) {
+      background: white;
+    }
+}
+
+.contents-table {
+    width: 80%;
+}
+
+.contents-table-header {    
+    font-weight: bold;
+    width: 100%;
+    background-color: black;
+    padding: 18px 0;
+    color: white;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    display: grid;
+    grid-template-columns: 8% 8% 15% 15% 15% 15% 1fr;
+}
+
+.contents-row {
+    width: 100%;
+    padding: 18px 0;
+    display: grid;
+    grid-template-columns: 8% 8% 15% 15% 15% 15% 1fr;
+    align-items: center;
+  
+    &:nth-of-type(odd) {
+      background: #EEEEEE;
+    }
+    &:nth-of-type(even) {
+      background: white;
+    }
+}
+
+.promotions-table {
+    width: 80%;
+}
+
+.promotions-table-header {
+    font-weight: bold;
+    width: 100%;
+    background-color: black;
+    padding: 18px 0;
+    color: white;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    display: grid;
+    grid-template-columns: 8% 8% 1fr 1fr 20% 20%;
+}
+
+.promotions-row {
+    width: 100%;
+    padding: 18px 0;
+    display: grid;
+    grid-template-columns: 8% 8% 1fr 1fr 20% 20%;
+    align-items: center;
+  
+    &:nth-of-type(odd) {
+      background: #EEEEEE;
+    }
+    &:nth-of-type(even) {
+      background: white;
+    }
+}
+
+.sub-title {
+    width: 80%;
+    display: flex;
+    align-items: flex-start;
+    padding-top: 5%;
+    padding-bottom: 2%;
+    font-weight: bold;
+}
+.sub-header {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.sub-data {
+  flex: 1 1 20%;
+  text-align: center;
+}
+
+.contents-row:last-child,
+.products-row:last-child,
+.influencers-row:last-child, 
+.promotions-row:last-child {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.social-media-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 30px;
+}
+  
+.social-media-links ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+  
+.social-media-links li {
+    padding-left: 20px;
+}
+  
+.social-media-links li::before {
+    content: '•'; 
+    margin-right: 10px;
+}

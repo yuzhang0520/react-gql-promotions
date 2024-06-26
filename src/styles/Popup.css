@@ -1,0 +1,112 @@
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+}
+
+.popup-inner {
+    position: relative;
+    width: 100%;
+    max-width: 640px;
+    background-color: white;
+    margin-top: 2%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.popup-inner .close-button {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+}
+
+input {
+    width: 60%;
+    height: 30px;
+    margin: 5px;
+    font-size: medium;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+
+.btn-submit {
+    margin-top: 20px;
+    height: 50px;
+    font-size: medium;
+    font-weight: bold;
+    border-radius: 15px;
+    border-color: white;
+    background-color: black;
+    color: white;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.popup-products-table {
+	width:90%;
+    border: 2px solid #ccc;
+    border-radius: 15px;
+    table-layout: fixed;
+    max-height: 80%;
+    overflow: hidden; 
+}
+
+.popup-products-header {
+    font-weight: bold;
+    padding: 10px;
+    width: 100%;
+    background-color: black;
+    padding: 18px 0;
+    color: white;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    display: grid;
+    grid-template-columns: 10% 20% 1fr 10%; 
+  }
+
+.table-content {
+    height: 100%;
+    overflow-y: auto;
+}
+
+.scrollable-content {
+    overflow-y: auto; /* Enable vertical scrolling for content */
+    max-height: calc(100% - 40px); /* Subtract height of header */
+}
+
+
+.product-row {
+    width: 100%;
+    padding: 18px 0;
+    display: grid;
+    grid-template-columns: 10% 20% 1fr 10%;
+    align-items: center;
+
+    &:nth-of-type(odd) {
+        background: #EEEEEE;
+    }
+    &:nth-of-type(even) {
+        background: white;
+    }
+}
+
+  .btn-add {
+    height: 35px;
+    border-radius: 10px;
+    border-color: white;
+    background-color: black;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: bold;
+}
+
+
+  

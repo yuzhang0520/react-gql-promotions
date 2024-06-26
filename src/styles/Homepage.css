@@ -1,0 +1,58 @@
+.homepage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  height: 100vh; /* Set height to full viewport height */
+  background-color: black; /* Set background color to black */
+}
+
+.homepage h1 {
+  color: white;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row; /* Display buttons in a row */
+  justify-content: space-between;
+  width: 60%; /* Set width to 80% of the parent container */
+  margin-top: 50px;
+}
+
+.button {
+  position: relative;
+  width: 20%; 
+  padding: 20px 40px; 
+  border: 2px solid white;
+  border-radius: 20px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  font-size: 1.2rem; 
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+.button:hover {
+  border: 2px solid black;
+  border-radius: 20px;
+  background-color: white;
+  color: black;
+}
+
+.button-link {
+  text-decoration: none; /* Remove underline */
+  font-weight: bold; /* Make font bold */
+}
+
+.button:hover::after {
+  content: 'Details ->';
+  position: absolute; /* Position relative to the button */
+  right: 5%; /* Adjust this value to position the content inside the button */
+  bottom: 5%; /* Adjust this value to position the content inside the button */
+  color: black;
+  font-size: 0.8rem;
+  font-weight: normal;
+}
